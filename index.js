@@ -8,8 +8,10 @@
  */
 function trimProperties(obj) {
   // ✨ implement
+  return obj.trim()
 }
 
+console.log(trimProperties('   dude  '))
 /**
  * [Exercise 2] trimPropertiesMutation trims in place the properties of an object
  * @param {object} obj - an object with properties that are strings
