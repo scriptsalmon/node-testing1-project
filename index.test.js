@@ -22,7 +22,7 @@ describe('[Exercise 2] trimPropertiesMutation', () => {
     const input = { name: '     jimmy   ' }
     const expected = { name: 'jimmy' }
     const actual = utils.trimPropertiesMutation(input)
-    expect(actual).toEqual(expected)
+    expect(actual).toEqual(expected);
   })
   // test('[4] the object returned is the exact same one we passed in', () => {})
   it('[4] the object returned is the exact same one we passed in', () => {
@@ -34,6 +34,12 @@ describe('[Exercise 2] trimPropertiesMutation', () => {
 
 describe('[Exercise 3] findLargestInteger', () => {
   // test('[5] returns the largest number in an array of objects { integer: 2 }', () => {})
+  it('[5] returns the largest number in an array of objects { integer: 2 }', () => {
+    const input = [{ integer: 1 }, { integer: 2 }, {integer: 3} ]
+    const expected = 3
+    const actual = utils.findLargestInteger(input)
+    expect(actual).toBe(expected);
+  })
 })
 
 describe('[Exercise 4] Counter', () => {
