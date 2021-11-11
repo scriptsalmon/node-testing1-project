@@ -114,14 +114,16 @@ describe('[Exercise 5] Seasons', () => {
 
 describe('[Exercise 6] Car', () => {
   let focus
-  beforeEach(() => {
+  beforeEach(() => { //   name, tanksize, mpg
     focus = new utils.Car('focus', 20, 30) // each test must start with a fresh car
   })
   test('[15] driving the car returns the updated odometer', () => {
-    
+    focus.drive(5)
+    expect(focus.odometer).toBe(5);
   })
   test('[16] driving the car uses gas', () => {
-    
+    focus.drive(5)
+    expect(focus.tank).toBe(5);
   })
   test('[17] refueling allows to keep driving', () => {
     
