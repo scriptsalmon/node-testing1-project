@@ -83,7 +83,7 @@ class Seasons {
    */
   constructor() {
     // ✨ initialize whatever properties are needed
-    this.seasons = ['summer', 'spring', 'fall', 'winter'];
+    this.seasons = ['summer', 'fall', 'winter', 'spring'];
     this.season = 0
   }
 
